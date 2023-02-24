@@ -180,7 +180,7 @@ void loop() {
     lcd.setCursor(7, 0);
     lcd.print(" ");    
     //lcd.write(byte(1));
-    if (playerButtonState == HIGH) {
+    if (playerButtonState == LOW) {
       if (whitePlaying == false) {
         wdiff += millis() - playTime;
         playTime = millis();
